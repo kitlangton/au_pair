@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'au_pair/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "au_pair"
+  spec.name          = "aupair"
   spec.version       = AuPair::VERSION
   spec.authors       = ["Kit Langton"]
   spec.email         = ["kitlangton@gmail.com"]
