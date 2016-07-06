@@ -2,10 +2,16 @@ module AuPair
   class Github
     BASEURL = "https://github.com"
 
-    def add_remote(username:, repo:)
+    def add_remote(name:, username:, repo:)
       repo_url = "#{BASEURL}/#{username}/#{repo}.git"
-      `git remote remove #{username}`
-      `git remote add #{username} #{repo_url}`
+      if has_remote?(name)
+        `git remote remove #{name}`
+      end
+      `git remote add #{name} #{repo_url}`
+    end
+
+    def has_remote?(name)
+      !!(remotes =~ /^#{name}\s/)
     end
 
     def remotes

@@ -19,7 +19,7 @@ describe AuPair::Setup do
         repo = instance_double(AuPair::Repo, get_name: 'assignment_1')
         github = instance_double(AuPair::Github)
         setup = AuPair::Setup.new(users: users, github: github, repo: repo)
-        expect(github).to receive(:add_remote).with(username: 'kitlangton', repo: 'assignment_1')
+        expect(github).to receive(:add_remote).with(name: 'kit', username: 'kitlangton', repo: 'assignment_1')
         setup.add 'kit'
       end
     end
