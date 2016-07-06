@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'au_pair'
+
+AuPair::CLI.start(ARGV)
