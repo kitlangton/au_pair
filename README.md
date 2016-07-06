@@ -14,11 +14,15 @@ Instead of having to remember everyone's github usernames, just do this:
 
 `aupair add kit`
 
-and their github remote will be added for the current repo (assuming it has the name as the working directory)
+And their github remote will be added for the current repo (assuming it has the name as the working directory)
 
 `git remote -v`
 
 `#=> kit  https://github.com/kitlangton/aupair.git (push)`
+
+And now you can start pulling away:
+
+`git pull kit master`
 
 ### But wait—
 
