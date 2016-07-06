@@ -14,7 +14,7 @@ Instead of having to remember everyone's github usernames, just do this:
 
 `aupair add kit`
 
-and their github remote will be added for the current repo (assuming it has the name as the working directory)
+and their github remote will be added for the current repo (uncleverly assuming the name of the current working directory is the name of their repo), bada bing:
 
 `git remote -v`
 
