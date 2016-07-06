@@ -28,4 +28,4 @@ Yes! I know! **Don't Worry!** The first time you type `aupair add kit` and it do
 
 and then you will tell it and it know forever and ever (until you switch computers or delete the hidden YAML file in your home directory)
 
-## Cool, I guess. Bye.
+### Cool, I guess. Bye.
