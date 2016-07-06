@@ -2,7 +2,7 @@ require 'yaml'
 
 module AuPair
   class UserStore
-    DEFAULT_CONFIG_FILE = "~/.aupair".freeze
+    DEFAULT_CONFIG_FILE = "#{Dir.home}/.aupair".freeze
 
     def initialize(config_file: DEFAULT_CONFIG_FILE)
       @config_file = config_file
