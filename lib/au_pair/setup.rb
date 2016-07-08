@@ -12,6 +12,7 @@ module AuPair
         github.add_remote(name: name, username: username, repo: repo.get_name)
       else
         users.ask_username_for(name)
+        add(name)
       end
     end
 
